@@ -189,24 +189,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    {{-- @extends('admin.admin_master')
+    @section('admin') --}}
 
 
     @extends('admin.admin_master')
