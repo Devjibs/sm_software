@@ -1,185 +1,3 @@
-{{-- @extends('admin.admin_master')
-@section('admin')
-
-    <div class="content-wrapper">
-        <div class="container-full">
-
-            <!-- Main content -->
-            <section class="content"> 
-                <div class="row">
-                    <div class="col-xl-3 col-6">
-                        <div class="box overflow-hidden pull-up">
-                            <div class="box-body">
-                                <div class="icon bg-primary-light rounded w-60 h-60">
-                                    <i class="text-primary mr-0 font-size-24 mdi mdi-account-multiple"></i>
-                                </div>
-                                <div>
-                                    <p class="text-mute mt-20 mb-0 font-size-16">New Customers</p>
-                                    <h3 class="text-white mb-0 font-weight-500">3400 <small class="text-success"><i
-                                                class="fa fa-caret-up"></i> +2.5%</small></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-6">
-                        <div class="box overflow-hidden pull-up">
-                            <div class="box-body">
-                                <div class="icon bg-warning-light rounded w-60 h-60">
-                                    <i class="text-warning mr-0 font-size-24 mdi mdi-car"></i>
-                                </div>
-                                <div>
-                                    <p class="text-mute mt-20 mb-0 font-size-16">Sold Cars</p>
-                                    <h3 class="text-white mb-0 font-weight-500">3400 <small class="text-success"><i
-                                                class="fa fa-caret-up"></i> +2.5%</small></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-6">
-                        <div class="box overflow-hidden pull-up">
-                            <div class="box-body">
-                                <div class="icon bg-info-light rounded w-60 h-60">
-                                    <i class="text-info mr-0 font-size-24 mdi mdi-sale"></i>
-                                </div>
-                                <div>
-                                    <p class="text-mute mt-20 mb-0 font-size-16">Sales Lost</p>
-                                    <h3 class="text-white mb-0 font-weight-500">$1,250 <small class="text-danger"><i
-                                                class="fa fa-caret-down"></i> -0.5%</small></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-6">
-                        <div class="box overflow-hidden pull-up">
-                            <div class="box-body">
-                                <div class="icon bg-danger-light rounded w-60 h-60">
-                                    <i class="text-danger mr-0 font-size-24 mdi mdi-phone-incoming"></i>
-                                </div>
-                                <div>
-                                    <p class="text-mute mt-20 mb-0 font-size-16">Inbound Call</p>
-                                    <h3 class="text-white mb-0 font-weight-500">1,460 <small class="text-danger"><i
-                                                class="fa fa-caret-up"></i> -1.5%</small></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="col-12">
-                        <div class="box">
-                            <div class="box-header">
-                                <h4 class="box-title align-items-start flex-column">
-                                    New Arrivals
-                                    <small class="subtitle">More than 400+ new members</small>
-                                </h4>
-                            </div>
-                            <div class="box-body">
-                                <div class="table-responsive">
-                                    <table class="table no-border">
-                                        <thead>
-                                            <tr class="text-uppercase bg-lightest">
-                                                <th style="min-width: 250px"><span class="text-white">products</span></th>
-                                                <th style="min-width: 100px"><span class="text-fade">pruce</span></th>
-                                                <th style="min-width: 100px"><span class="text-fade">deposit</span></th>
-                                                <th style="min-width: 150px"><span class="text-fade">agent</span></th>
-                                                <th style="min-width: 130px"><span class="text-fade">status</span></th>
-                                                <th style="min-width: 120px"></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="pl-0 py-8">
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 mr-20">
-                                                            <div class="bg-img h-50 w-50"
-                                                                style="background-image: url(../images/gallery/creative/img-2.jpg)">
-                                                            </div>
-                                                        </div>
-
-                                                        <div>
-                                                            <a href="#"
-                                                                class="text-white font-weight-600 hover-primary mb-1 font-size-16">Vivamus
-                                                                consectetur</a>
-                                                            <span class="text-fade d-block">Pharetra, Nulla , Nec,
-                                                                Aliquet</span>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <span class="text-fade font-weight-600 d-block font-size-16">
-                                                        Paid
-                                                    </span>
-                                                    <span class="text-white font-weight-600 d-block font-size-16">
-                                                        $45,800k
-                                                    </span>
-                                                </td>
-                                                <td>
-                                                    <span class="text-fade font-weight-600 d-block font-size-16">
-                                                        Paid
-                                                    </span>
-                                                    <span class="text-white font-weight-600 d-block font-size-16">
-                                                        $45k
-                                                    </span>
-                                                </td>
-                                                <td>
-                                                    <span class="text-fade font-weight-600 d-block font-size-16">
-                                                        Sophia
-                                                    </span>
-                                                    <span class="text-white font-weight-600 d-block font-size-16">
-                                                        Pharetra
-                                                    </span>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-warning-light badge-lg">In Progress</span>
-                                                </td>
-                                                <td class="text-right">
-                                                    <a href="#"
-                                                        class="waves-effect waves-light btn btn-info btn-circle mx-5"><span
-                                                            class="mdi mdi-bookmark-plus"></span></a>
-                                                    <a href="#"
-                                                        class="waves-effect waves-light btn btn-info btn-circle mx-5"><span
-                                                            class="mdi mdi-arrow-right"></span></a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-				</div>
-			</section>
-		</div>
-	</div>
-    @endsection --}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -193,12 +11,12 @@
     @section('admin') --}}
 
 
-    @extends('admin.admin_master')
+    {{-- @extends('admin.admin_master')
     @section('admin')
 
         {{-- @include('admin.body.sidebar') --}}
         
-            <div class="container-fluid">
+            {{-- <div class="container-fluid">
               <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">
                   <div class="card card-stats">
@@ -321,8 +139,350 @@
               </div>
 
             </div>
-          
+           --}}
           {{-- @include('admin.body.footer') --}}
     
 
-    @endsection
+    {{-- @endsection --}} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@extends('admin.body.sidebar')
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{-- @php
+$prefix = Request::route()->getPrefix();
+$route = Route::current()->getName();
+
+@endphp
+
+
+ <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
+  <!--
+    Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+    Tip 2: you can also add an image using data-image tag
+-->
+  <div class="logo"><a href="http://www.github.com/jibogithub" class="simple-text logo-normal">
+      SM SOFTWARE
+    </a></div>
+  <div class="sidebar-wrapper">
+    <ul class="nav">
+      <li class="nav-item active  ">
+        <a class="nav-link" href="{{ route('dashboard') }}">
+          <i class="material-icons">dashboard</i>
+          <p class="{{ ($route == 'dashboard')?'active':'' }}" >
+           Dashboard</p>
+        </a>
+      </li>
+      @if(Auth::user()->usertype == 'Admin')
+        <div class="btn-group dropright {{ ($prefix == '/users')?'active':'' }} ">
+          <button class="btn btn-secondary dropdown-toggle" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Manage User
+          </button>
+          <div class="dropdown-menu">
+            <!-- Dropdown menu links -->
+            <a class="dropdown-item" href="{{ route('user.view') }}">View Users</a>
+            <a class="dropdown-item" href="{{ route('users.add') }}">Add User</a>
+          </div>
+        </div>
+      @endif
+      <br>
+      <div class="btn-group dropdown {{ ($prefix == '/profile')?'active':'' }}">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Manage Profile
+        </button>
+          <div class="dropdown-menu">
+            <!-- Dropdown menu links -->
+            <a class="dropdown-item" href="{{ route('profile.view') }}">Your Profile</a>
+            <a class="dropdown-item" href="{{ route('password.view') }}">Change Password</a>
+          </div>
+      </div>
+
+
+
+
+
+
+<!-- Default dropright button -->
+<div class="btn-group dropdown {{ ($prefix == '/students')?'active':'' }}">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Student Management
+  </button>
+  <div class="dropdown-menu">
+    <!-- Dropdown menu links -->
+    <a class="dropdown-item" href="{{ route('student.registration.view') }}">Student Registration</a>
+    <a class="dropdown-item" href="{{ route('student.year.view') }}">Student Year</a>
+    <a class="dropdown-item" href="{{ route('roll.generate.view') }}">Roll Generate</a>
+    <a class="dropdown-item" href="{{ route('registration.fee.view') }}">Registration Fee</a>
+    <a class="dropdown-item" href="{{ route('monthly.fee.view') }}">Monthly Fee</a>
+    <a class="dropdown-item" href="{{ route('exam.fee.view') }}">Exam Fee</a>
+  </div>
+</div> --}}
+
+
+
+
+
+
+
+{{-- 
+<!-- Default dropright button -->
+<div class="btn-group dropright {{ ($prefix == '/employees')?'active':'' }}">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Employee Management
+  </button>
+  <div class="dropdown-menu">
+    <!-- Dropdown menu links -->
+    <a class="dropdown-item {{ ($route == 'employee.registration.view')?'active':'' }}" href="">Employee Registration</a>
+    <a class="dropdown-item {{ ($route == 'employee.salary.view')?'active':'' }}" href="{{ route('employee.salary.view') }}">Employee Salary</a>
+    <a class="dropdown-item" href="{{ route('employee.leave.view') }}">Employee Leave</a>
+    <a class="dropdown-item" href="{{ route('employee.attendance.view') }}">Employee Attendance</a>
+    <a class="dropdown-item" href="{{ route('employee.monthly.salary') }}">Employee Monthly Salary</a>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+        
+
+<!-- Default dropright button -->
+<div class="btn-group dropright {{ ($prefix == '/marks')?'active':'' }}">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Marks Management
+  </button>
+  <div class="dropdown-menu">
+    <!-- Dropdown menu links -->
+    <a class="dropdown-item {{ ($route == 'marks.entry.add')?'active':'' }}" href="{{ route('marks.entry.add') }}">Marks Entry</a>
+          <a class="dropdown-item {{ ($route == 'marks.entry.edit')?'active':'' }}" href="{{ route('marks.entry.edit') }}">Marks Edit</a>
+          <a class="dropdown-item {{ ($route == 'marks.entry.grade')?'active':'' }}" href="{{ route('marks.entry.grade') }}">Marks Grade</a>
+  </div>
+</div>
+
+
+
+
+
+<!-- Default dropright button -->
+<div class="btn-group dropright  {{ ($prefix == '/setups')?'active':'' }}">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Setup Management
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <!-- Dropdown menu links -->
+    <a class="dropdown-item" href="{{ route('student.class.view') }}">Student Class</a>
+    <a class="dropdown-item" href="{{ route('student.year.view') }}">Student Year</a>
+    <a class="dropdown-item" href="{{ route('student.group.view') }}">Student Group</a>
+    <a class="dropdown-item" href="{{ route('student.shift.view') }}">Student Shift</a>
+    <a class="dropdown-item" href="{{ route('fee.category.view') }}">Fee Category</a>
+    <a class="dropdown-item" href="{{ route('fee.amount.view') }}">Fee Amount</a>
+    <a class="dropdown-item" href="{{ route('exam.type.view') }}">Exam Type</a>
+    <a class="dropdown-item" href="{{ route('school.subject.view') }}">School Subject</a>
+    <a class="dropdown-item" href="{{ route('assign.subject.view') }}">Assign Subject</a>
+    <a class="dropdown-item" href="{{ route('designation.view') }}">Designation</a>
+  </div>
+</div>
+
+
+
+
+<!-- Default dropright button -->
+<div class="btn-group dropright {{ ($prefix == '/accounts')?'active':'' }}">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Accounts Management
+  </button>
+  <div class="dropdown-menu">
+    <!-- Dropdown menu links -->
+    <a class="dropdown-item {{ ($route == 'student.fee.view')?'active':'' }}" href="{{ route('student.fee.view') }}">Student Fee</a>
+          <a class="dropdown-item {{ ($route == 'account.salary.view')?'active':'' }}" href="{{ route('account.salary.view') }}">Employee Salary</a>
+          <a class="dropdown-item {{ ($route == 'other.cost.view')?'active':'' }}" href="{{ route('other.cost.view') }}">Other Cost</a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- Default dropright button -->
+<div class="btn-group dropright {{ ($prefix == '/reports')?'active':'' }}">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Report Management
+  </button>
+  <div class="dropdown-menu">
+    <!-- Dropdown menu links -->
+    <a class="dropdown-item {{ ($route == 'monthly.profit.view')?'active':'' }}" href="{{ route('monthly.profit.view') }}">Monthly-Yearly Profit</a>
+
+          <a class="dropdown-item {{ ($route == 'attendance.report.view')?'active':'' }}" href="{{ route('marksheet.generate.view') }}">Attendance Report</a>
+
+          <a class="dropdown-item {{ ($route == 'student.result.view')?'active':'' }}" href="{{ route('student.result.view') }}">Student Result </a>
+
+          <a class="dropdown-item {{ ($route == 'student.idcard.view')?'active':'' }}" href="{{ route('student.idcard.view') }}">Student ID Card </a>
+  </div>
+</div>
+
+
+
+
+
+
+      <li class="nav-item active-pro ">
+        <a class="nav-link" href="./upgrade.html">
+          <i class="material-icons">unarchive</i>
+          <p>Logout</p>
+        </a>
+      </li>
+      </div>
+      
+</div> --}}
