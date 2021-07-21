@@ -1,0 +1,26 @@
+/*treeview*/
+.treeview-menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .treeview-menu .treeview-menu {
+    padding-left: 20px; }
+  .treeview-menu > li {
+    margin: 0; }
+    .treeview-menu > li > a {
+      padding: 8px 5px 8px 25px;
+      display: block;
+      font-size: 13px; }
+      .treeview-menu > li > a > i {
+        width: 20px;
+        padding-right: 20px;
+        padding-left: 10px; }
+      .treeview-menu > li > a > .fa-angle-down {
+        width: auto; }
+      .treeview-menu > li > a > .fa-angle-left {
+        width: auto; }
+      .treeview-menu > li > a > .pull-right-container > .fa-angle-down {
+        width: auto; }
+      .treeview-menu > li > a > .pull-right-container > .fa-angle-left {
+        width: auto; }
