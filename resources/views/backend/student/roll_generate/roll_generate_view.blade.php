@@ -2,55 +2,47 @@
 @section('admin')
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
- <div class="content-wrapper">
-	  <div class="container-full">
-		<!-- Content Header (Page header) -->
-		 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-		<!-- Main content -->
-		<section class="content">
-		  <div class="row">
-
-		
-<div class="col-12">
-<div class="box bb-3 border-warning">
-				  <div class="box-header">
-					<h4 class="box-title">Student <strong>Roll Generator</strong></h4>
-				  </div>
-
-				  <div class="box-body">
-				
-		<form method="post" action="{{ route('roll.generate.store') }}">
+    <div class="card">
+        <div class="card-header card-header-primary">
+            <h4 class="card-title"></h4>
+            <p class="card-category">Student <strong>Roll Generator</strong></p>
+        </div>
+        <div class="card-body">
+            <form method="post" action="{{ route('roll.generate.store') }}">
 			@csrf
-			<div class="row">
-
-
-
-<div class="col-md-4">
-
- 		 <div class="form-group">
-		<h5>Year <span class="text-danger"> </span></h5>
-		<div class="controls">
+                <div class="row">
+                    <br><br>
+                    <div class="col-md-8">
+                        <div class="form-group bmd-form-group">
+                            <div class="controls">
 	 <select name="year_id" id="year_id" required="" class="form-control">
 			<option value="" selected="" disabled="">Select Year</option>
 			 @foreach($years as $year)
  <option value="{{ $year->id }}" >{{ $year->name }}</option>
-		 	@endforeach
+		 	@endforeach 
 			 
 		</select>
-	  </div>		 
-	  </div>
-	  
- 			</div> <!-- End Col md 4 --> 
+	  </div>	
+                        </div>
+                    </div>
+				</div>
 
 
+			
 
- 			
- 		<div class="col-md-4">
 
- 		 <div class="form-group">
-		<h5>Class <span class="text-danger"> </span></h5>
-		<div class="controls">
+			<div class="row">
+				<div class="col-md-8">
+					
+				</div>
+		</div>
+
+			<div class="row">
+					<div class="col-md-8">
+						<div class="form-group bmd-form-group">
+							<div class="controls">
 	 <select name="class_id" id="class_id"  required="" class="form-control">
 			<option value="" selected="" disabled="">Select Class</option>
 			 @foreach($classes as $class)
@@ -58,21 +50,24 @@
 		 	@endforeach
 			 
 		</select>
-	  </div>		 
-	  </div>
-	  
- 			</div> <!-- End Col md 4 --> 
+	  </div>	
+					</div>
+				</div>
+                </div>
 
 
- 			<div class="col-md-4" style="padding-top: 25px;">
-
-  <a id="search" class="btn btn-primary" name="search"> Search</a>
-	  
- 			</div> <!-- End Col md 4 --> 		
-			</div><!--  end row --> 
+				
 
 
- <!--  ////////////////// Roll generate table /////////////  -->
+
+					<div class="col-md-6">
+					<a id="search" class="btn btn-primary btn-link" name="search"> Search</a>
+                    <div class="clearfix"></div>
+				</div>
+				</div>
+
+
+
 
 
  <div class="row d-none" id="roll-generate">
@@ -97,21 +92,23 @@
  	
  </div>
 
-  <input type="submit" class="btn btn-info" value="Roll Generator">
+  <input type="submit" class="btn btn-primary" value="Roll Generator">
+                    
+            </form>
+
+        </div><!-- End Col Md-6 -->
+    </div>
+    </div>
 
 
-		</form> 
+    </div>
+    </div>
 
-			       
-			</div>
-			<!-- /.col -->
-		  </div>
-		  <!-- /.row -->
-		</section>
-		<!-- /.content -->
-	  
-	  </div>
-  </div>
+
+    </div>
+    </div>
+
+
 
 
 <script type="text/javascript">
@@ -145,3 +142,39 @@
 
 
 @endsection
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
