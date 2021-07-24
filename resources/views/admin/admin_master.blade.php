@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="">
+  <link rel="icon" type="image/png" href="">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Material Dashboard by Creative Tim
+    SM-SOFTWARE
   </title>
   <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -49,8 +49,9 @@
 
 
 
+<body class="">
+  <div class="wrapper ">
 
-<body>
   @extends('admin.body.sidebar')
 
 <div class="sidebar-wrapper">
@@ -64,6 +65,7 @@
       @include('admin.body.footer')
       </div>
   </div>
+</div>
 </div>
 
 
