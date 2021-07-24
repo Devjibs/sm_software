@@ -26,89 +26,187 @@
 
 
 
-
         {{-- @include('admin.body.sidebar') --}}
         <div class="content">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-4 col-md-6 col-sm-6">
                   <div class="card card-stats">
                     <div class="card-header card-header-warning card-header-icon">
                       <div class="card-icon">
-                        <i class="material-icons">content_copy</i>
+                        <i class="material-icons">people</i>
                       </div>
-                      <p class="card-category">Used Space</p>
-                      <h3 class="card-title">49/50
-                        <small>GB</small>
+                      <p class="card-category">Total Users</p>
+                      <h3 class="card-title">2,000
+                        <small></small>
                       </h3>
                     </div>
                     <div class="card-footer">
                       <div class="stats">
-                        <i class="material-icons text-danger">warning</i>
-                        <a href="javascript:;">Get More Space...</a>
+                        <i class="material-icons">visibility_off</i>
+                        <a href="#"> view users</a>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-4 col-md-6 col-sm-6">
                   <div class="card card-stats">
                     <div class="card-header card-header-success card-header-icon">
                       <div class="card-icon">
-                        <i class="material-icons">store</i>
+                        <i class="material-icons">house</i>
                       </div>
-                      <p class="card-category">Revenue</p>
-                      <h3 class="card-title">$34,245</h3>
+                      <p class="card-category"><b>MY</b></p>
+                      <h3 class="card-title">School</h3>
                     </div>
                     <div class="card-footer">
                       <div class="stats">
-                        <i class="material-icons">date_range</i> Last 24 Hours
+                        <i class="material-icons">language</i> 
+                        <a class="" data-toggle="modal" data-target="#exampleModal" href="#">visit website</a>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
                   <div class="card card-stats">
                     <div class="card-header card-header-danger card-header-icon">
                       <div class="card-icon">
-                        <i class="material-icons">info_outline</i>
+                        <i class="material-icons">menubook</i>
                       </div>
-                      <p class="card-category">Fixed Issues</p>
-                      <h3 class="card-title">75</h3>
+                      <p class="card-category">Total Subjects</p>
+                      <h3 class="card-title">84</h3>
                     </div>
                     <div class="card-footer">
                       <div class="stats">
-                        <i class="material-icons">local_offer</i> Tracked from Github
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                  <div class="card card-stats">
-                    <div class="card-header card-header-info card-header-icon">
-                      <div class="card-icon">
-                        <i class="fa fa-twitter"></i>
-                      </div>
-                      <p class="card-category">Followers</p>
-                      <h3 class="card-title">+245</h3>
-                    </div>
-                    <div class="card-footer">
-                      <div class="stats">
-                        <i class="material-icons">update</i> Just Updated
+                        <i class="material-icons">visibility_off</i> view subjects
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+
+
+
+
+
+
+              <!--Row Section 2-->
+            <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="card">
+                <div class="card-header card-header-warning">
+                  <h4 class="card-title">TOP 10 TEACHERS</h4>
+                  <p class="card-category"></p>
+                </div>
+                <div class="card-body table-responsive">
+                  <table class="table table-hover">
+                    <thead class="text-warning">
+                      <tr><th>ID</th>
+                      <th>Name</th>
+                      <th>Salary</th>
+                      <th>Country</th>
+                    </tr></thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Dakota Rice</td>
+                        <td>$36,738</td>
+                        <td>Niger</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Minerva Hooper</td>
+                        <td>$23,789</td>
+                        <td>Curaçao</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Sage Rodriguez</td>
+                        <td>$56,142</td>
+                        <td>Netherlands</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Philip Chaney</td>
+                        <td>$38,735</td>
+                        <td>Korea, South</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="col-lg-6 col-md-12">
+              <div class="card">
+                <div class="card-header card-header-warning">
+                  <h4 class="card-title">TOP 10 STUDENTS</h4>
+                  <p class="card-category"></p>
+                </div>
+                <div class="card-body table-responsive">
+                  <table class="table table-hover">
+                    <thead class="text-warning">
+                      <tr><th>ID</th>
+                      <th>Name</th>
+                      <th>Salary</th>
+                      <th>Country</th>
+                    </tr></thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Dakota Rice</td>
+                        <td>$36,738</td>
+                        <td>Niger</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Minerva Hooper</td>
+                        <td>$23,789</td>
+                        <td>Curaçao</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Sage Rodriguez</td>
+                        <td>$56,142</td>
+                        <td>Netherlands</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Philip Chaney</td>
+                        <td>$38,735</td>
+                        <td>Korea, South</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-12">
                   <div class="card card-chart">
                     <div class="card-header card-header-success">
                       <div class="ct-chart" id="dailySalesChart"></div>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title">Daily Sales</h4>
+                      <h4 class="card-title">School Chart</h4>
                       <p class="card-category">
-                        <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.</p>
+                        <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> Newly Enrolled.</p>
                     </div>
                     <div class="card-footer">
                       <div class="stats">
@@ -117,47 +215,16 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="card card-chart">
-                    <div class="card-header card-header-warning">
-                      <div class="ct-chart" id="websiteViewsChart"></div>
-                    </div>
-                    <div class="card-body">
-                      <h4 class="card-title">Email Subscriptions</h4>
-                      <p class="card-category">Last Campaign Performance</p>
-                    </div>
-                    <div class="card-footer">
-                      <div class="stats">
-                        <i class="material-icons">access_time</i> campaign sent 2 days ago
-                      </div>
-                    </div>
-                  </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="card card-chart">
-                    <div class="card-header card-header-danger">
-                      <div class="ct-chart" id="completedTasksChart"></div>
-                    </div>
-                    <div class="card-body">
-                      <h4 class="card-title">Completed Tasks</h4>
-                      <p class="card-category">Last Campaign Performance</p>
-                    </div>
-                    <div class="card-footer">
-                      <div class="stats">
-                        <i class="material-icons">access_time</i> campaign sent 2 days ago
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-        </div>
 
 
 
 
-
+<script>
+   $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+</script>
 
 
 

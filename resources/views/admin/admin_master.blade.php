@@ -49,7 +49,7 @@
 
 
 
-<body class="">
+<body class="hold-transition dark-skin fixed sidebar-mini theme-primary sidebar-collapse">
   <div class="wrapper ">
 
   @extends('admin.body.sidebar')
@@ -62,6 +62,8 @@
       @include('admin.body.header')
 
       @yield('admin')
+      @include('admin.body.banner')
+
       @include('admin.body.footer')
       </div>
   </div>
