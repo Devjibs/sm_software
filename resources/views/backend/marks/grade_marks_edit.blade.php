@@ -4,46 +4,26 @@
 
 
 
- <div class="content-wrapper">
-	  <div class="container-full">
-		<!-- Content Header (Page header) -->
-	
-
-<section class="content">
-
-		 <!-- Basic Forms -->
-		  <div class="box">
-			<div class="box-header with-border">
-			  <h4 class="box-title">Edit Grade Marks  </h4>
-			  
-			</div>
-			<!-- /.box-header -->
-			<div class="box-body">
-			  <div class="row">
-				<div class="col">
-
- <form method="post" action="{{ route('update.marks.grade',$editData->id) }}"  >
+<div class="card">
+	<div class="card-header card-header-primary">
+		<h4 class="card-title"></h4>
+		<p class="card-category">Student <strong>Marks Edit</strong></p>
+	</div>
+	<div class="card-body">
+		<form method="post" action="{{ route('update.marks.grade',$editData->id) }}"  >
 	 	@csrf
-					  <div class="row">
-						<div class="col-12">	
- 
-
- 	
- 		<div class="row"> <!-- 1st Row -->
- 			
- 			<div class="col-md-4">
-
- 		 <div class="form-group">
+		 <div class="row">
+			<div class="col-md-6">
+				<div class="form-group bmd-form-group">
 		<h5>Grade Name <span class="text-danger">*</span></h5>
 		<div class="controls">
  <input type="text" name="grade_name" class="form-control" required="" value="{{ $editData->grade_name }}" > 
 	  </div>		 
 	  </div>
+	</div> <!-- End Col md 4 -->
 
- 			</div> <!-- End Col md 4 -->
 
-
-	<div class="col-md-4">
+	<div class="col-md-6">
 
  		 <div class="form-group">
 		<h5>Grade Point <span class="text-danger">*</span></h5>
@@ -53,10 +33,11 @@
 	  </div>
 	  
  			</div> <!-- End Col md 4 -->
+		 </div>
 
 
-
-	<div class="col-md-4">
+		 <div class="row">
+	<div class="col-md-6">
 
  		 <div class="form-group">
 		<h5>Start Marks <span class="text-danger">*</span></h5>
@@ -66,21 +47,8 @@
 	  </div>
 	  
  			</div> <!-- End Col md 4 --> 
- 
- 			
- 		</div> <!-- End 1stRow -->
 
-
-
-
-
-
-	<div class="row"> <!-- 2nd Row -->
- 			
- 			 
-
-
-	<div class="col-md-4">
+	<div class="col-md-6">
 
  		 <div class="form-group">
 		<h5>End Marks <span class="text-danger">*</span></h5>
@@ -90,10 +58,13 @@
 	  </div>
 	  
  			</div> <!-- End Col md 4 -->
+ 		</div> <!-- End 1stRow -->
 
 
 
-	<div class="col-md-4">
+
+		 <div class="row">
+	<div class="col-md-6">
 
  	 <div class="form-group">
 		<h5>Start Point <span class="text-danger">*</span></h5>
@@ -106,7 +77,7 @@
 
 
 
-<div class="col-md-4">
+<div class="col-md-6">
 
  		 <div class="form-group">
 		<h5>End Point <span class="text-danger">*</span></h5>
@@ -116,10 +87,7 @@
 	  </div>
 	  
  			</div> <!-- End Col md 4 --> 
-
- 
- 			
- 		</div> <!-- End 2nd Row -->
+		</div> <!-- End 2nd Row -->
 
 
 
@@ -127,7 +95,7 @@
 
  
  			
- 			<div class="col-md-4">
+ 			<div class="col-md-6">
 
  		<div class="form-group">
 		<h5>Remarks <span class="text-danger">*</span></h5>
@@ -139,7 +107,7 @@
  			</div> <!-- End Col md 4 -->
 
 
-	<div class="col-md-4">
+	<div class="col-md-6">
 
  		  
  			</div> <!-- End Col md 4 --> 
@@ -155,22 +123,19 @@
 						</div>
 					</form>
 
-				</div>
-				<!-- /.col -->
-			  </div>
-			  <!-- /.row -->
-			</div>
-			<!-- /.box-body -->
-		  </div>
-		  <!-- /.box -->
+							       
+	</div>
 
-		</section>
+</div><!-- End Col Md-6 -->
+</div>
+</div>
 
 
- 
- 
-	  
-	  </div>
-  </div>
+</div>
+</div>
+
+
+</div>
+</div>
   
 @endsection
