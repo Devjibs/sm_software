@@ -4805,7 +4805,9 @@ tbody.collapse.show {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid #eeeeee;
-  border-radius: 0.25rem;
+  border-radius: 2.95rem;
+  box-shadow: 2px 10px 24px 7px rgb(20 0 0 / 19%)!important;;
+
 }
 
 .card>hr {
@@ -17553,8 +17555,10 @@ html[dir="rtl"] .form-check .form-check-sign .check:before {
 .card.bg-danger,
 .card.card-rotate.bg-danger .front,
 .card.card-rotate.bg-danger .back {
-  background: linear-gradient(60deg, #ef5350, #e53935);
+  background: linear-gradient(20deg, #9c27b0, #e53935);
 }
+
+
 
 .card .card-header-rose .card-icon,
 .card .card-header-rose .card-text,
@@ -19752,5 +19756,33 @@ Copyright (c) 2015 Daniel Eden
     display: none !important;
   }
 }
+
+
+
+
+
+
+
+
+
+
+.card .card-header-danger .card-icon, .card .card-header-danger:not(.card-header-icon):not(.card-header-text), .card .card-header-danger .card-text {
+  box-shadow: 0 13px 25px 4px rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(244 67 54 / 40%);
+}
+
+
+
+
+.card .card-header-success .card-icon, .card .card-header-success .card-text, .card .card-header-success:not(.card-header-icon):not(.card-header-text), .card.bg-success, .card.card-rotate.bg-success .front, .card.card-rotate.bg-success .back {
+  background: #9c27b0
+}
+
+
+.card .card-header-warning .card-icon, .card .card-header-warning .card-text, .card .card-header-warning:not(.card-header-icon):not(.card-header-text), .card.bg-warning, .card.card-rotate.bg-warning .front, .card.card-rotate.bg-warning .back {
+  background: linear-gradient(
+    20deg, #9c27b0, #e53935);
+}
+
+
 
 /*# sourceMappingURL=dashboard-free.css.map */
