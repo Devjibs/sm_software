@@ -37,7 +37,7 @@
                         <i class="material-icons">people</i>
                       </div>
                       <p class="card-category">Total Users</p>
-                      <h3 class="card-title">2,000
+                      <h3 class="card-title">{{count($users)}}
                         <small></small>
                       </h3>
                     </div>
@@ -95,42 +95,29 @@
             <div class="col-lg-6 col-md-12">
               <div class="card">
                 <div class="card-header card-header-warning">
-                  <h4 class="card-title">TOP 10 TEACHERS</h4>
+                  <h4 class="card-title">TOP ADMINS</h4>
                   <p class="card-category"></p>
                 </div>
                 <div class="card-body table-responsive">
                   <table class="table table-hover">
-                    <thead class="text-warning">
-                      <tr><th>ID</th>
-                      <th>Name</th>
-                      <th>Salary</th>
-                      <th>Country</th>
+                    <thead class="thead-light">
+                      <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Photo</th>
                     </tr></thead>
                     <tbody>
+                      @foreach ($users as $user)
+                      @if($user->usertype == 'Admin')
                       <tr>
-                        <td>1</td>
-                        <td>Dakota Rice</td>
-                        <td>$36,738</td>
-                        <td>Niger</td>
+                        <td>{{$user->id}}</td>
+                        <td>{{$user->name}}</td>
+                        <td>{{$user->email}}</td>
+                        <td><img class="rounded-circle" width="50px" src="{{(!empty($user->image))? url('upload/user_images/'.$user->image):url('upload/user_images/noimage.png')}}" alt="User Avatar"></td>
                       </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Minerva Hooper</td>
-                        <td>$23,789</td>
-                        <td>Curaçao</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>Sage Rodriguez</td>
-                        <td>$56,142</td>
-                        <td>Netherlands</td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>Philip Chaney</td>
-                        <td>$38,735</td>
-                        <td>Korea, South</td>
-                      </tr>
+                      @endif
+                      @endforeach
                     </tbody>
                   </table>
                 </div>
@@ -143,42 +130,29 @@
             <div class="col-lg-6 col-md-12">
               <div class="card">
                 <div class="card-header card-header-warning">
-                  <h4 class="card-title">TOP 10 STUDENTS</h4>
+                  <h4 class="card-title">TOP USERS</h4>
                   <p class="card-category"></p>
                 </div>
                 <div class="card-body table-responsive">
                   <table class="table table-hover">
-                    <thead class="text-warning">
-                      <tr><th>ID</th>
-                      <th>Name</th>
-                      <th>Salary</th>
-                      <th>Country</th>
+                    <thead class="thead-light">
+                      <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Photo</th>
                     </tr></thead>
                     <tbody>
+                      @foreach ($users as $user)
+                      @if($user->usertype == 'User')
                       <tr>
-                        <td>1</td>
-                        <td>Dakota Rice</td>
-                        <td>$36,738</td>
-                        <td>Niger</td>
+                        <td>{{$user->id}}</td>
+                        <td>{{$user->name}}</td>
+                        <td>{{$user->email}}</td>
+                        <td><img class="rounded-circle" width="50px" src="{{(!empty($user->image))? url('upload/user_images/'.$user->image):url('upload/user_images/noimage.png')}}" alt="User Avatar"></td>
                       </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Minerva Hooper</td>
-                        <td>$23,789</td>
-                        <td>Curaçao</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>Sage Rodriguez</td>
-                        <td>$56,142</td>
-                        <td>Netherlands</td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>Philip Chaney</td>
-                        <td>$38,735</td>
-                        <td>Korea, South</td>
-                      </tr>
+                      @endif
+                      @endforeach
                     </tbody>
                   </table>
                 </div>
@@ -216,6 +190,8 @@
                   </div>
                 </div>
                 </div>
+            </div>
+        </div>
 
 
 

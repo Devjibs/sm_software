@@ -41,6 +41,7 @@ use App\Http\Controllers\Backend\Report\MarkSheetController;
 use App\Http\Controllers\Backend\Report\AttenReportController;
 use App\Http\Controllers\Backend\Report\ResultReportController;
 
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -58,7 +59,8 @@ Route::get('/', function () {
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('admin.index');
+    $users = User::all();
+    return view('admin.index', compact('users'));
 })->name('dashboard');
 
 Route::get('/admin/logout', [AdminController::class, 'Logout'])->name('admin.logout');
