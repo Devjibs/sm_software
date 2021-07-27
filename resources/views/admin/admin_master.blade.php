@@ -43,13 +43,13 @@
 
 
 
+{{-- hold-transition dark-skin fixed sidebar-mini theme-primary sidebar-collapse --}}
 
 
 
 
 
-
-<body class="hold-transition dark-skin fixed sidebar-mini theme-primary sidebar-collapse">
+<body class="">
   <div class="wrapper ">
 
   @extends('admin.body.sidebar')
