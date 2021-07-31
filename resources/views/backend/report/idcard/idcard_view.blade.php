@@ -2,24 +2,13 @@
 @section('admin')
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
- <div class="content-wrapper">
-	  <div class="container-full">
-		<!-- Content Header (Page header) -->
-		 
 
-		<!-- Main content -->
-		<section class="content">
-		  <div class="row">
-
-		
-<div class="col-12">
-<div class="box bb-3 border-warning">
-				  <div class="box-header">
-	 <h4 class="box-title">Manage <strong>Student ID Card</strong></h4>
-				  </div>
-
-				  <div class="box-body">
-				
+					<div class="card">
+						<div class="card-header card-header-primary">
+							<h4 class="card-title"></h4>
+							<p class="card-category">Manage <strong>Student ID Card</strong></p>
+						</div>
+						<div class="card-body">	
  <form method="GET" action="{{ route('report.student.idcard.get') }}" target="_blank">
 			@csrf
 			<div class="row">
@@ -42,10 +31,11 @@
 	  </div>
 	  
  			</div> <!-- End Col md 4 --> 
+			</div>
 
 
 
- 			
+			<div class="row">	
  		<div class="col-md-4">
 
  		 <div class="form-group">
@@ -62,17 +52,19 @@
 	  </div>
 	  
  			</div> <!-- End Col md 4--> 
+			</div>
 
  
  
 
-
+			<div class="row">
  			<div class="col-md-4" style="padding-top: 25px;"  >
 
   <input type="submit" class="btn btn-rounded btn-primary" value="Search">
 
 	  
- 			</div> <!-- End Col md 4 --> 		
+ 			</div> <!-- End Col md 4 --> 
+			</div>		
 			</div><!--  end row --> 
 
  
@@ -83,16 +75,10 @@
 			</div>
 			<!-- /.col -->
 		  </div>
-		  <!-- /.row -->
-		</section>
-		<!-- /.content -->
-	  
-	  </div>
-  </div>
-
- 
 
  
 
 
 @endsection
+
+

@@ -4,24 +4,12 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
 
- <div class="content-wrapper">
-	  <div class="container-full">
-		<!-- Content Header (Page header) -->
-		 
-
-		<!-- Main content -->
-		<section class="content">
-		  <div class="row">
-
-		
-<div class="col-12">
-<div class="box bb-3 border-warning">
-				  <div class="box-header">
-					<h4 class="box-title">Add <strong>Student Fee </strong></h4>
-				  </div>
-
-				  <div class="box-body">
-				
+<div class="card">
+	<div class="card-header card-header-primary">
+		<h4 class="card-title"></h4>
+		<p class="card-category">Add <strong>Student Fee</strong></p>
+	</div>
+	<div class="card-body">	
 		 
 			<div class="row"> 
 
@@ -134,7 +122,7 @@
  	 </tbody>
  	</table>
 
- <button type="submit" class="btn btn-primary" style="margin-top: 10px">Submit</button>  
+ <button type="submit" class="btn btn-primary btn-rounded" style="margin-top: 10px">Submit</button>  
  	
  </form>
     </script>
@@ -156,13 +144,6 @@
 			<!-- /.col -->
 		  </div>
 		  <!-- /.row -->
-		</section>
-		<!-- /.content -->
-	  
-	  </div>
-  </div>
-
- 
 
 
 <script type="text/javascript">

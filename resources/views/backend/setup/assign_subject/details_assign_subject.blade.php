@@ -1,23 +1,10 @@
 @extends('admin.admin_master')
 @section('admin')
+<div class="card">
+	<div class="card-header card-header-primary">
+		<h4 class="card-title"></h4>
+		<p class="card-category">Assign <strong>Subject Details</strong></p>
 
-
- <div class="content-wrapper">
-	  <div class="container-full">
-		<!-- Content Header (Page header) -->
-		 
-
-		<!-- Main content -->
-		<section class="content">
-		  <div class="row">
-			  
-			 
-
-			<div class="col-12">
-
-			 <div class="box">
-				<div class="box-header with-border">
-				  <h3 class="box-title"> Assign Subject Details</h3>
 	<a href="{{ route('assign.subject.add') }}" style="float: right;" class="btn btn-rounded btn-success mb-5"> Add Assign Subject</a>			  
 
 				</div>
@@ -59,19 +46,6 @@
 				<!-- /.box-body -->
 			  </div>
 			  <!-- /.box -->
-
-			       
-			</div>
-			<!-- /.col -->
-		  </div>
-		  <!-- /.row -->
-		</section>
-		<!-- /.content -->
-	  
-	  </div>
-  </div>
-
-
 
 
 

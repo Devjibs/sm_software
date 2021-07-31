@@ -2,31 +2,20 @@
 @section('admin')
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
- <div class="content-wrapper">
-	  <div class="container-full">
-		<!-- Content Header (Page header) -->
-		 
 
-		<!-- Main content -->
-		<section class="content">
-		  <div class="row">
-
-		
-<div class="col-12">
-<div class="box bb-3 border-warning">
-				  <div class="box-header">
-	 <h4 class="box-title">Manage <strong>Student Result Report</strong></h4>
-				  </div>
-
-				  <div class="box-body">
-				
+					<div class="card">
+						<div class="card-header card-header-primary">
+							<h4 class="card-title"></h4>
+							<p class="card-category">Manage <strong>Student Result Report</strong></p>
+						</div>
+						<div class="card-body">	
  <form method="GET" action="{{ route('report.student.result.get') }}" target="_blank">
 			@csrf
 			<div class="row">
 
 
 
-<div class="col-md-3">
+<div class="col-md-6">
 
  		 <div class="form-group">
 		<h5>Year <span class="text-danger"> </span></h5>
@@ -42,11 +31,12 @@
 	  </div>
 	  
  			</div> <!-- End Col md 3 --> 
+			</div>
 
 
 
- 			
- 		<div class="col-md-3">
+			<div class="row">
+ 		<div class="col-md-6">
 
  		 <div class="form-group">
 		<h5>Class <span class="text-danger"> </span></h5>
@@ -62,11 +52,12 @@
 	  </div>
 	  
  			</div> <!-- End Col md 3 --> 
+			</div>
 
 
  		
 
-
+			<div class="row">
 <div class="col-md-3">
 
  		 <div class="form-group">
@@ -83,6 +74,7 @@
 	  </div>
 	  
  			</div> <!-- End Col md 3 --> 
+			</div>
 
  
 
@@ -104,15 +96,11 @@
 			<!-- /.col -->
 		  </div>
 		  <!-- /.row -->
-		</section>
-		<!-- /.content -->
-	  
-	  </div>
-  </div>
-
- 
 
  
 
 
 @endsection
+
+
+

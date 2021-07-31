@@ -3,32 +3,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
 
- <div class="content-wrapper">
-	  <div class="container-full">
-		<!-- Content Header (Page header) -->
-		 
+<div class="card">
+	<div class="card-header card-header-primary">
+		<h4 class="card-title"></h4>
+		<p class="card-category">Manage Monthly / <strong>Yearly Profit</strong></p>
+	</div>
+	<div class="card-body">
 
-		<!-- Main content -->
-		<section class="content">
-		  <div class="row">
-
-		
-<div class="col-12">
-<div class="box bb-3 border-warning">
-				  <div class="box-header">
-	 <h4 class="box-title">Manage <strong>Monthly/Yearly Profit</strong></h4>
-				  </div>
-
-				  <div class="box-body">
-				
-	 
-			<div class="row">
-
-
-
-<div class="col-md-4">
-
- 		<div class="form-group">
+	<div class="row">
+ 		<div class="col-md-6 form-group">
 		<h5>Start Date <span class="text-danger">*</span></h5>
 		<div class="controls">
 	 <input type="date" name="start_date" id="start_date" class="form-control" > 
@@ -38,8 +21,8 @@
 	  
   </div> <!-- End Col md 4 --> 
 
-
-  <div class="col-md-4">
+  <div class="row">
+  <div class="col-md-6">
 
  		<div class="form-group">
 		<h5>End Date <span class="text-danger">*</span></h5>
@@ -50,15 +33,16 @@
 	</div>
 	  
   </div> <!-- End Col md 4 --> 
+	</div>
 			
  		 
 
 
- 			<div class="col-md-4" style="padding-top: 25px;">
+	<div class="row">
+		<div class="col-md-6">
+		<button id="search" class="btn btn-primary" name="search"> Search</button>
 
-  <a id="search" class="btn btn-primary" name="search"> Search</a>
-	  
- 			</div> <!-- End Col md 4 --> 		
+	</div> <!-- End Col md 3 --> 			
 			</div><!--  end row --> 
 
 
@@ -98,14 +82,6 @@
 
 			       
 			</div>
-			<!-- /.col -->
-		  </div>
-		  <!-- /.row -->
-		</section>
-		<!-- /.content -->
-	  
-	  </div>
-  </div>
 
 
 <script type="text/javascript">
@@ -133,3 +109,26 @@
 
 
 @endsection
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,24 +1,12 @@
 @extends('admin.admin_master')
 @section('admin')
 
-
- <div class="content-wrapper">
-	  <div class="container-full">
-		<!-- Content Header (Page header) -->
-		 
-
-		<!-- Main content -->
-		<section class="content">
-		  <div class="row">
-		
-<div class="col-12">
-<div class="box bb-3 border-warning">
-				  <div class="box-header">
-					<h4 class="box-title">Student <strong>Search</strong></h4>
-				  </div>
-
-				  <div class="box-body">
-				
+					<div class="card">
+						<div class="card-header card-header-primary">
+							<h4 class="card-title"></h4>
+							<p class="card-category">Student <strong>Search</strong></p>
+						</div>
+						<div class="card-body">	
 		<form method="GET" action="{{ route('student.year.class.wise') }}">
 			
 			<div class="row">
@@ -65,7 +53,7 @@
 
  			<div class="col-md-4" style="padding-top: 25px;">
 
- <input type="submit" class="btn btn-rounded btn-dark mb-5" name="search" value="Search">
+ <input type="submit" class="btn btn-rounded btn-primary" name="search" value="Search">
 	  
  			</div> <!-- End Col md 4 --> 
 
@@ -79,26 +67,34 @@
 					 
 				  </div>
 				</div>
-	</div> <!-- // end first col 12 -->
 
 
-			 
 
-			<div class="col-12">
 
-			 <div class="box">
-				<div class="box-header with-border">
-				  <h3 class="box-title">Student List</h3>
-	<a href="{{ route('student.registration.add') }}" style="float: right;" class="btn btn-rounded btn-success mb-5"> Add Student  </a>			  
 
-				</div>
-				<!-- /.box-header -->
-				<div class="box-body">
-					<div class="table-responsive">
 
-	@if(!@search)					
+
+
+
+				<div class="card">
+						<div class="col-md-12">
+					
+								<div class="card-header card-header-primary">
+									<h4 class="card-title "><b>Student List</b></h4>
+								</div>
+					
+								<button type="button" class="btn btn-secondary btn-lg btn-block"><a href="{{ route('student.registration.add') }}"> Add Student  </a></button>
+					
+					
+								<div class="card-body">
+									<div class="table-responsive">
+										<table class="table">
+
+	@if(!null)	{{--*@if(!@search) --}}					
 	 <table id="example1" class="table table-bordered table-striped">
-						<thead>
+
+
+		<thead class=" text-primary">
 			<tr>
 				<th width="5%">SL</th>  
 				<th>Name</th>
@@ -203,22 +199,17 @@
 					</div>
 				</div>
 				<!-- /.box-body -->
-			  </div>
-			  <!-- /.box -->
+		
 
 			       
 			</div>
 			<!-- /.col -->
-		  </div>
-		  <!-- /.row -->
-		</section>
-		<!-- /.content -->
-	  
-	  </div>
-  </div>
-
+				</div>
 
 
 
 
 @endsection
+
+
+

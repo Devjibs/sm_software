@@ -2,22 +2,14 @@
 @section('admin')
 
 
- <div class="content-wrapper">
-	  <div class="container-full">
-		<!-- Content Header (Page header) -->
-	
-
-<section class="content">
-
-		 <!-- Basic Forms -->
-		  <div class="box">
-			<div class="box-header with-border">
-			  <h4 class="box-title">Add Designation</h4>
-			  
-			</div>
-			<!-- /.box-header -->
-			<div class="box-body">
-			  <div class="row">
+<div class="card">
+	<div class="card-header card-header-primary">
+		<h4 class="card-title"></h4>
+		<p class="card-category">Add <strong>Designation</strong></p>
+	</div>
+	<div class="card-body">	
+		 
+				<div class="row"> 
 				<div class="col">
 
 	 <form method="post" action="{{ route('store.designation') }}">
@@ -43,7 +35,7 @@
   
 							 
 						<div class="text-xs-right">
-	 <input type="submit" class="btn btn-rounded btn-info mb-5" value="Submit">
+	 <input type="submit" class="btn btn-rounded btn-primary" value="Submit">
 						</div>
 					</form>
 
@@ -52,21 +44,7 @@
 			  </div>
 			  <!-- /.row -->
 			</div>
-			<!-- /.box-body -->
-		  </div>
-		  <!-- /.box -->
-
-		</section>
-
-
- 
- 
-	  
-	  </div>
-  </div>
-
-
-
+</div>
 
 
 @endsection

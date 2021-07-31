@@ -2,23 +2,12 @@
 @section('admin')
 
 
- <div class="content-wrapper">
-	  <div class="container-full">
-		<!-- Content Header (Page header) -->
-	
-
-<section class="content">
-
-		 <!-- Basic Forms -->
-		  <div class="box">
-			<div class="box-header with-border">
-			  <h4 class="box-title">Add Attendance </h4>
-			  
-			</div>
-			<!-- /.box-header -->
-			<div class="box-body">
-			  <div class="row">
-				<div class="col">
+<div class="card">
+	<div class="card-header card-header-primary">
+		<h4 class="card-title"></h4>
+		<p class="card-category">Add <strong>Attendance</strong></p>
+	</div>
+	<div class="card-body">	
 
 	 <form method="post" action="{{ route('store.employee.attendance') }}">
 	 	@csrf
@@ -44,7 +33,7 @@
    <div class="row">
    	<div class="col-md-12">
 
-   		<table class="table table-bordered table-striped" style="width: 100%">
+		<table class="table table-bordered table-striped" style="width: 100%">
    			<thead>
    				<tr>
    	<th rowspan="2" class="text-center" style="vertical-align: middle;">Sl</th>
@@ -96,7 +85,7 @@
  
 							 
 						<div class="text-xs-right">
-	 <input type="submit" class="btn btn-rounded btn-info mb-5" value="Submit">
+	 <input type="submit" class="btn btn-rounded btn-primary" value="Submit">
 						</div>
 					</form>
 
@@ -104,21 +93,6 @@
 				<!-- /.col -->
 			  </div>
 			  <!-- /.row -->
-			</div>
-			<!-- /.box-body -->
-		  </div>
-		  <!-- /.box -->
-
-		</section>
-
-
- 
- 
-	  
-	  </div>
-  </div>
-
-
 
 
 

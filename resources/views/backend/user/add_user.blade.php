@@ -13,8 +13,8 @@
             @csrf
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="form-group bmd-form-group">
-                            <label class="">User Role</label>
+                        <div class="form-group ">
+                            <h6 class="">User Role</h6>
                             <select name="usertype" id="usertype" required="" class="form-control">
                               <option value="" selected="" disabled="">Select Role</option>
                               <option value="Admin">Admin</option>
@@ -22,38 +22,36 @@
                           </select>
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-md-6">
-                        <div class="form-group bmd-form-group">
-                            <label class="bmd-label-floating">UserName</label>
-                            <input type="text" name="name" class="form-control" required="">
+                        <div class="form-group ">
+                            <h6 class="">UserName</h6>
+                            <input class="form-control clearable" type="text" name="name" required="">
                           </div>
                         </div>
                 </div>
 
                 <div class="row">
                       <div class="col-md-6">
-                        <div class="form-group bmd-form-group">
-                          <label class="bmd-label-floating">Email</label>
+                        <div class="form-group ">
+                          <h6 class="">Email</h6>
                           <input type="email" name="email" class="form-control" required="">
                         </div>
                       </div>
-                        
                     <div class="col-md-6">
-                      <div class="form-group bmd-form-group">
-                          <label class="bmd-label-floating">Password</label>
-                          <input type="password" name="password" class="form-control" required="">
+                      <div class="form-group ">
+                          <h6 class="">Password</h6>
+                          <input class="form-control clearable"  type="password" name="password" required="">
                         </div>
                       </div>
                 </div>
 
 
-
+                <div class="row">
                   <div class="col-md-6">
                     <button type="submit" class="btn btn-primary pull-right" value="submit">Add User</button>
                               <div class="clearfix"></div>
                   </div>
+                </div>
 
             </form>
 

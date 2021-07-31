@@ -4,23 +4,12 @@
 
 
 
- <div class="content-wrapper">
-	  <div class="container-full">
-		<!-- Content Header (Page header) -->
-	
-
-<section class="content">
-
-		 <!-- Basic Forms -->
-		  <div class="box">
-			<div class="box-header with-border">
-			  <h4 class="box-title">Edit Student </h4>
-			  
-			</div>
-			<!-- /.box-header -->
-			<div class="box-body">
-			  <div class="row">
-				<div class="col">
+<div class="card">
+	<div class="card-header card-header-primary">
+		<h4 class="card-title"></h4>
+		<p class="card-category">Edit <strong>Student</strong></p>
+	</div>
+	<div class="card-body">	
 
 	 <form method="post" action="{{ route('update.student.registration',$editData->student_id) }}" enctype="multipart/form-data">
 	 	@csrf
@@ -299,20 +288,7 @@
 				</div>
 				<!-- /.col -->
 			  </div>
-			  <!-- /.row -->
-			</div>
-			<!-- /.box-body -->
-		  </div>
-		  <!-- /.box -->
 
-		</section>
-
-
- 
- 
-	  
-	  </div>
-  </div>
 
 <script type="text/javascript">
 	$(document).ready(function(){
