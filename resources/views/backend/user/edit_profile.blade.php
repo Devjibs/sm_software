@@ -31,7 +31,7 @@
                     <div class="col-md-6">
                         <div class="form-group bmd-form-group">
                             <label class="bmd-label-floating">Phone</label>
-                            <input type="text" name="phone" class="form-control" value="{{ $editData->phone }}"
+                            <input type="text" name="mobile" class="form-control" value="{{ $editData->mobile }}"
                                 required="">
                         </div>
                     </div>

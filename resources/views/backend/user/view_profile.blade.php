@@ -378,7 +378,7 @@
               <div class="col-sm-4">
                 <div class="description-block">
                   <h5 class="description-header"></h5>
-                  <span class="description-text">{{$user->phone}}</span>
+                  <span class="description-text">{{$user->mobile}}</span>
                 </div>
                 <!-- /.description-block -->
               </div>

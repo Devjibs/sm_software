@@ -30,7 +30,7 @@ class ProfileController extends Controller
     	$data = User::find(Auth::user()->id);
     	$data->name = $request->name;
     	$data->email = $request->email;
-    	$data->phone = $request->phone;
+    	$data->mobile = $request->mobile;
     	$data->address = $request->address;
     	$data->gender = $request->gender;
 
