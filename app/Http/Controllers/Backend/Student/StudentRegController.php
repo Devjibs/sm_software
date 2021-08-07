@@ -85,18 +85,18 @@ class StudentRegController extends Controller
     	$final_id_no = $checkYear.$id_no;
     	$user = new User();
     	$code = rand(0000,9999);
-    	$user->id_no = $final_id_no;
+    	$user->id = $final_id_no;
     	$user->password = bcrypt($code);
     	$user->usertype = 'Student';
     	$user->code = $code;
     	$user->name = $request->name;
-    	$user->fname = $request->fname;
-    	$user->mname = $request->mname;
+    	$user->father_name = $request->fname;
+    	$user->mother_name = $request->mname;
     	$user->mobile = $request->mobile;
     	$user->address = $request->address;
     	$user->gender = $request->gender;
     	$user->religion = $request->religion;
-    	$user->dob = date('Y-m-d',strtotime($request->dob));
+    	$user->date_of_birth = date('Y-m-d',strtotime($request->dob));
 
     	if ($request->file('image')) {
     		$file = $request->file('image');

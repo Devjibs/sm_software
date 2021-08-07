@@ -4,23 +4,12 @@
 
 
 
- <div class="content-wrapper">
-	  <div class="container-full">
-		<!-- Content Header (Page header) -->
-	
-
-<section class="content">
-
-		 <!-- Basic Forms -->
-		  <div class="box">
-			<div class="box-header with-border">
-			  <h4 class="box-title">Add Student </h4>
-			  
-			</div>
-			<!-- /.box-header -->
-			<div class="box-body">
-			  <div class="row">
-				<div class="col">
+<div class="card">
+	<div class="card-header card-header-primary">
+		<h4 class="card-title">Add User</h4>
+		<p class="card-category"></p>
+	</div>
+	<div class="card-body">
 
 	 <form method="post" action="{{ route('store.student.registration') }}" enctype="multipart/form-data">
 	 	@csrf
@@ -261,29 +250,45 @@
 
 
 
- 			
- 		<div class="col-md-4">
+ 		<div class="row">	
+ 		<div class="col-md-12">
 
  		<div class="form-group">
-		<h5>Profile Image <span class="text-danger">*</span></h5>
+		<h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Profile Image <span class="text-danger">*</span></h5>
 		<div class="controls">
 	 <input type="file" name="image" class="form-control" id="image" >  </div>
+	 <div class="input-group col-md-9">
+		<div class="custom-file">
+			<input type="file" name="image" class="custom-file-input" id="image">
+			<label class="custom-file-label" for="inputGroupFile02"></label>
+		</div>
+		<div class="input-group-append">
+			<span class="input-group-text" id=""><img id="showImage"
+					src="{{ !empty($user->image) ? url('upload/user_images/' . $user->image) : url('upload/user_images/noimage.png') }}"
+					style="width: 100px; width: 100px;"> </span>
+		</div>
+	</div>
 	 </div>
 	  
  			</div> <!-- End Col md 4 --> 
 
 
-<div class="col-md-4">
+			 
+		 </div>
 
- 		<div class="form-group">
-		<div class="controls">
-	<img id="showImage" src="{{ url('upload/no_image.jpg') }}" style="width: 100px; width: 100px; border: 1px solid #000000;"> 
 
-	 </div>
-	 </div>
-	  
- 			</div> <!-- End Col md 4 --> 
- 
+	{{-- <div class="col-md-4">
+
+		<div class="form-group">
+			<div class="controls">
+				<img id="showImage" src="{{ url('upload/no_image.jpg') }}" style="width: 100px; width: 100px; border: 1px solid #000000;"> 
+
+			</div>
+		</div>
+
+	</div> <!-- End Col md 4 --> 
+  --}}
  			
  		</div> <!-- End 5TH Row -->
 
@@ -291,7 +296,7 @@
   
 							 
 						<div class="text-xs-right">
-	 <input type="submit" class="btn btn-rounded btn-info mb-5" value="Submit">
+	 <input type="submit" class="btn btn-rounded btn-primary mb-10" value="Submit">
 						</div>
 					</form>
 
@@ -299,19 +304,7 @@
 				<!-- /.col -->
 			  </div>
 			  <!-- /.row -->
-			</div>
-			<!-- /.box-body -->
-		  </div>
-		  <!-- /.box -->
 
-		</section>
-
-
- 
- 
-	  
-	  </div>
-  </div>
 
 <script type="text/javascript">
 	$(document).ready(function(){

@@ -16,6 +16,8 @@
   <!-- CSS Files -->
   <link href="{{asset('../assets/css/material-dashboard.css')}}" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
+     
+ <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" >
 </head>
 
 
@@ -98,9 +100,6 @@
  <script src="{{asset('../assets/js/core/bootstrap-material-design.min.js')}}"></script>
  <script src="{{asset('../assets/js/plugins/perfect-scrollbar.jquery.min.js')}}"></script>
  <!-- Plugin for the momentJs  -->
- <script src="{{asset('../assets/js/plugins/moment.min.js')}}"></script>
- <!--  Plugin for Sweet Alert -->
- <script src="{{asset('../assets/js/plugins/sweetalert2.js')}}"></script>
  <!-- Forms Validations Plugin -->
  <script src="{{asset('../assets/js/plugins/jquery.validate.min.js')}}"></script>
  <!-- Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
@@ -132,6 +131,8 @@
  <script src="{{asset('../assets/js/plugins/bootstrap-notify.js')}}"></script>
  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
  <script src="{{asset('../assets/js/material-dashboard.js?v=2.1.2')}}" type="text/javascript"></script>
+
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
  <!-- Material Dashboard DEMO methods, don't include it in your project! -->
  <script>
   $(document).ready(function() {
@@ -321,6 +322,8 @@
 </script>
 
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
 <script type="text/javascript">
   $(function(){
     $(document).on('click','#delete',function(e){
@@ -382,37 +385,3 @@
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>

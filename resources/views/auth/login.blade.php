@@ -6,6 +6,7 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <meta name="description" content="">
 	  <meta name="author" content="">
+	  <meta name="csrf-token" content="{{ csrf_token() }}" />
 	  <link rel="icon" href="../backend/images/favicon.ico">
 
       <link rel="stylesheet" href="../backend/fontawesome/css/all.css">
@@ -33,7 +34,7 @@
 		
 		<div class="screen__content">
 			
-			<form class="login" method="POST" action="{{ route('login') }}">
+			<form action="{{ route('login') }}" class="login" method="POST">
 				@csrf
 				<div class="form-group">
 				<div class="login__field">
@@ -48,7 +49,6 @@
 					<input type="password" id="password" name="password" class="login__input" placeholder="Password">
 				</div>
 				</div>
-
 
 				<div class="row">
 					<div class="col-6">
