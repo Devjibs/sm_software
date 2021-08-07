@@ -8,19 +8,20 @@
 	font-family: Raleway, sans-serif;
 }
 
+
 body {
-	background: linear-gradient(90deg, #C7C5F4, #776BCC);		
+    background: linear-gradient(90deg, #C7C5F4, #ffffff);
+    background-image: url("../images/student/student7.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
 }
+
 
 .container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
-    background-image: url("../images/student/student7.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #cccccc;;
 }
 
 .screen {
@@ -205,4 +206,11 @@ a:-webkit-any-link {
 
 .text-white {
     color: #232323 !important;
+}
+
+.error-cust {
+	font-size: 12px;
+	color: red;
+	height: 35px;
+	margin-bottom: 30px;
 }
